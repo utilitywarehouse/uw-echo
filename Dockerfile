@@ -4,7 +4,7 @@ RUN mkdir -p /opt
 
 WORKDIR /opt
 
-COPY package.json /opt
+COPY package.json /opt/package.json
 
 ENV NODE_ENV=production
 

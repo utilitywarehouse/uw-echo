@@ -4,7 +4,6 @@ machine:
   node:
     version: 4.0.0
 
-test:
-  post:
-    - ls -al
-    - docker build -t uw-echo .
+deployment:
+  hub:
+    - docker build -t utilitywarehouse/uw-echo .
