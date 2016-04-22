@@ -3,3 +3,7 @@ machine:
     - docker
   node:
     version: 4.0.0
+
+test:
+  post:
+    - docker build -t uw-echo .
