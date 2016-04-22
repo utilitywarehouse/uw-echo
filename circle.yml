@@ -6,7 +6,7 @@ machine:
 
 deployment:
   hub:
-    branch: production
+    branch: master
     commands:
       - docker build -t utilitywarehouse/uw-echo .
       - docker login -e "$DOCKER_EMAIL" -u "$DOCKER_USER" -p "$DOCKER_PASS"
