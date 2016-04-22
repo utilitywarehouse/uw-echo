@@ -6,4 +6,5 @@ machine:
 
 test:
   post:
+    - ls -al
     - docker build -t uw-echo .
