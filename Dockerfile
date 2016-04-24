@@ -1,4 +1,6 @@
-FROM node:argon
+FROM alpine
+
+RUN apk add --update nodejs
 
 RUN mkdir -p /opt
 
