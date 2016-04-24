@@ -6,7 +6,7 @@ module.exports.start = function(port) {
   var app = express();
 
   app.use(bodyParser.json());
-  app.use(bodyParser.urlencoded({ extended: false })); //change here to trgger errora
+  app.use(bodyParser.urlencoded({ extended: true })); //change here to trgger errora
   app.set('json spaces', 4);
 
   app.all('*', function(req, res) {
