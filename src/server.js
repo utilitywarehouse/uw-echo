@@ -10,6 +10,7 @@ module.exports.start = function(port) {
   app.set('json spaces', 4);
 
   app.all('*', function(req, res) {
+    
 
     var response = {
       url: req.protocol + '://' + req.hostname + req.originalUrl,
